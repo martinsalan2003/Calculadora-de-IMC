@@ -1,6 +1,6 @@
 # Calcule seu Indice De Massa Corporal
 
-![preview](./assets/imagens/preview.jpeg)
+![preview](./imagens/preview.jpeg)
 
 
  >Calculadora de IMC
