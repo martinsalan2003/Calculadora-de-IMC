@@ -131,7 +131,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @media (width < 40rem) {
     html {
-        font-size: 70%;
+        font-size: 50%;
     }hr {
         display: none;
     }.direito, .esquerdo {
@@ -139,8 +139,8 @@ input[type="number"]::-webkit-inner-spin-button {
     }.esquerdo {
         opacity: 0;
     }.direito {
-        height: 90vw;
-        width: 90vw;
+        height: 100vw;
+        width: 100vw;
     }
 
 }
