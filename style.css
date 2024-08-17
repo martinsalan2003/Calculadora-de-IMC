@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+    
+}
+.container {
+    background-color: #d2f0e2;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+/* carde de exibiçãio */
+.segundoContainer {
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+}
+
+/*lado da imagem*/
+.esquerdo {
+    width: 50%;
+}
+.esquerdo img {
+    height: 100%;
+    width: 100%;
+}
+hr {
+    border-color: #1c3034; 
+}
+
+/* lado da calculadora */
+.header {
+    color: #1c3034;
+    text-decoration-line:underline;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px ;
+}
+.conteinerFormulario {
+    border-radius: 20px;
+    background-color: #57d9a3;
+    display: flex;
+    flex-direction: column;
+    margin: 60px;
+    height: 20rem
+}
+input{
+    color: #1c3034;
+    background-color: #d2f0e2;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    height: 3rem;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input[type="number"] ::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.pesoUser {
+    display: grid;
+    place-items: center;
+    height: 6rem;
+}
+.alturaUser {
+    display: grid;
+    place-items: center;
+    height: 6rem;
+}
+.btn_calc {
+    cursor: pointer;
+    width: 50%;
+    height: 50%;
+}
+.btn_calc:hover {
+    transition-duration: 0.9s;
+    color: #d2f0e2;
+    background-color: #1c3034;
+}
+.btn {
+    display: grid;
+    place-items: center;
+    height: 8rem;
+}
+.direito {
+    width: 50%;
+}
+
+/* div de resposta */
+.resposta {
+    text-align: center;
+    border-radius: 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    height: 20rem
+}
+.resposta h1 {
+    padding: 5px;
+    text-align: center;
+}
+.btn_refazer {
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #57d9a3;
+    cursor: pointer;
+    width: 80%;
+    height: 4rem;
+}
+
+.btn_refazer:hover {
+    transition-duration: 0.9s;
+    color: #d2f0e2;
+    background-color: #1c3034;
+}
+
+/* exibição mobile */
+
+@media (width < 40rem) {
+    html {
+        font-size: 70%;
+    }hr {
+        display: none;
+    }.direito, .esquerdo {
+        position: absolute;
+    }.esquerdo {
+        opacity: 0;
+    }.direito {
+        width: 80%;
+    }
+
+}
